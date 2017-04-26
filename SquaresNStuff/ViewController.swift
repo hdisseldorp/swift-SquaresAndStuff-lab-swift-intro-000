@@ -9,7 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  
+  @IBOutlet weak var profileImageView: UIImageView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    profileImageView.layer.borderColor = UIColor.white.cgColor
+    profileImageView.layer.borderWidth = 7.0
+    profileImageView.layer.cornerRadius = 10.0
+    profileImageView.layer.masksToBounds = true
+  }
 }
